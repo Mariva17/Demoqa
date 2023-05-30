@@ -1,0 +1,26 @@
+package api;
+
+import api.schemas.RegistrationDto;
+import com.github.javafaker.Faker;
+import io.restassured.response.Response;
+
+public class RegistrationApi extends ApiBase {
+
+    Response response;
+    RegistrationDto dto;
+
+    Faker faker = new Faker();
+
+    public RegistrationDto randomDataBodyForRegisterUser(String password) {
+        dto = new RegistrationDto();
+        dto.setUserName(faker.name().username());
+        dto.setPassword(password);
+        return dto;
+    }
+
+    public Response registerUser(Integer code, String password) {
+        String endPoint = "/Account/v1/User";
+        response = postRequest(endPoint, code, randomDataBodyForRegisterUser(password));
+        return response;
+    }
+}

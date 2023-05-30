@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d4be97d-a83b-4bf3-be90-b54cc449fbb2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/ApiBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/RegistrationApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/api/schemas/RegistrationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/BookStoreTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/ProfilePageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/RegistrationNewUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/SelectAllTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/ApplicationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/TestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/BookPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/BookStorePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/FramePages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/PageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/ProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/SelectPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/wait/Wait.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectId" id="2PVbODMEJy3v5Y1RlEf4WOsmNpl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager" selected="TestNG.ProfilePageTests.checkButtonLogOut">
+    <configuration name="ProfilePageTests.checkButtonDeleteAllBooks" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.ProfilePageTests" />
+      <option name="METHOD_NAME" value="checkButtonDeleteAllBooks" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfilePageTests.checkButtonGoToBookStore" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.ProfilePageTests" />
+      <option name="METHOD_NAME" value="checkButtonGoToBookStore" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfilePageTests.checkButtonLogOut" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.ProfilePageTests" />
+      <option name="METHOD_NAME" value="checkButtonLogOut" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationNewUserTest.registerNewUserViaApiAndLoginViaUITest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.RegistrationNewUserTest" />
+      <option name="METHOD_NAME" value="registerNewUserViaApiAndLoginViaUITest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectAllTests.checkMultiSelectDropAndDown" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.SelectAllTests" />
+      <option name="METHOD_NAME" value="checkMultiSelectDropAndDown" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.ProfilePageTests.checkButtonLogOut" />
+        <item itemvalue="TestNG.ProfilePageTests.checkButtonDeleteAllBooks" />
+        <item itemvalue="TestNG.ProfilePageTests.checkButtonGoToBookStore" />
+        <item itemvalue="TestNG.RegistrationNewUserTest.registerNewUserViaApiAndLoginViaUITest" />
+        <item itemvalue="TestNG.SelectAllTests.checkMultiSelectDropAndDown" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d4be97d-a83b-4bf3-be90-b54cc449fbb2" name="Changes" comment="" />
+      <created>1683545164575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683545164575</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
