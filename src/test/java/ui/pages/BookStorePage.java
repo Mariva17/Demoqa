@@ -40,7 +40,16 @@ public class BookStorePage extends PageBase {
     List<WebElement> elementGroups;
 
 
-    public boolean goToBookStore() {
+    public void goToBookStore() {
+        driver.get("https://demoqa.com/books");
+    }
+
+    public void waitForLoading() {
+        wait = new Wait(driver);
+        wait.forVisibility(bookStore);
+    }
+
+    public boolean checkGoToBookStore() {
         return bookStore.isDisplayed();
     }
 

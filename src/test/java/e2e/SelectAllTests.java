@@ -5,7 +5,8 @@ import ui.TestBase;
 import ui.pages.FramePages;
 import ui.pages.SelectPage;
 
-import static java.lang.Thread.sleep;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SelectAllTests extends TestBase {
 
@@ -14,10 +15,10 @@ public class SelectAllTests extends TestBase {
     FramePages framePages;
 
     @Test
-    public void checkSelectValue() throws InterruptedException {
+    public void checkSelectValue() {
         selectPage = new SelectPage(app.driver);
         selectPage.goToSelectPage();
-        selectPage.selectInFirstInput("Group 1, option 2");
+        selectPage.selectValueDropdown("Group 1, option 2");
 
     }
 
@@ -25,34 +26,36 @@ public class SelectAllTests extends TestBase {
     public void checkOldSelectMenu() {
         selectPage = new SelectPage(app.driver);
         selectPage.goToSelectPage();
-        selectPage.selectOld("8");
+        selectPage.selectOldDropDown("Yellow");
 
     }
 
     @Test
-    public void checkMultiSelectMenu() throws InterruptedException {
+    public void checkMultiSelectMenu() {
+        List<String> values = new ArrayList<>();
+        values.add("volvo");
+        values.add("saab");
+        values.add("audi");
         selectPage = new SelectPage(app.driver);
         selectPage.goToSelectPage();
-        selectPage.selectMulti();
-        sleep(5000);
+        selectPage.standardMultiSelect(values);
     }
 
     @Test
-    public void checkMultiSelectDropAndDown() throws InterruptedException {
+    public void checkMultiSelectDropAndDown() {
         selectPage = new SelectPage(app.driver);
         selectPage.goToSelectPage();
-        selectPage.multiSelectDD("Green");
-        selectPage.multiSelectDD("Black");
-        sleep(3000);
+        selectPage.multiSelectDropDown("Green");
+        selectPage.multiSelectDropDown("Black");
         selectPage.cleanInput();
-        sleep(3000);
+
     }
 
     @Test
-    public void checkSelectValueSecondInput() throws InterruptedException {
+    public void checkSelectValueSecondInput() {
         selectPage = new SelectPage(app.driver);
         selectPage.goToSelectPage();
-        selectPage.selectSecondInput("Prof.");
+        selectPage.selectOneDropdown("Prof.");
 
     }
 

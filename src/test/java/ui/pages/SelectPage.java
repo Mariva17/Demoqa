@@ -1,12 +1,14 @@
 package ui.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import ui.wait.Wait;
+
+import java.util.List;
 
 public class SelectPage extends PageBase {
 
@@ -17,66 +19,87 @@ public class SelectPage extends PageBase {
     }
 
     @FindBy(id = "withOptGroup")
-    WebElement withOptGroup;
+    WebElement selectValueDropDown;
 
     @FindBy(id = "react-select-2-input")
-    WebElement firstInput;
-
-    @FindBy(id = "react-select-4-input")
-    WebElement multiSelectDropDown;
+    WebElement selectOptionInput;
 
     @FindBy(id = "selectOne")
-    WebElement secondInput;
+    WebElement selectOneDropDown;
 
-    @FindBy(css = "[class=' css-yk16xz-control']")
-    WebElement thirdInput;
+    @FindBy(id = "react-select-3-input")
+    WebElement selectTitleInput;
+
+    @FindBy(id = "oldSelectMenu")
+    WebElement selectOldDropDown;
+
+    @FindBy(id = "cars")
+    WebElement standardMultiSelect;
+
+    @FindBy(xpath = "(//*[@class=' css-2b097c-container'])[3]")
+    WebElement multiSelectDropDown;
+
+    @FindBy(id = "react-select-4-input")
+    WebElement multiSelectDropDownInput;
+
+    @FindBy(xpath = "(//*[@class='css-19bqh2r'])[5]")
+    WebElement clean;
+
 
     public void goToSelectPage() {
         driver.get("https://demoqa.com/select-menu");
+    }
+
+    public void waitForLoading() {
         wait = new Wait(driver);
-        wait.forVisibility(withOptGroup);
+        wait.forVisibility(selectValueDropDown);
+        wait.forVisibility(selectOptionInput);
+        wait.forVisibility(selectOneDropDown);
+        wait.forVisibility(selectOldDropDown);
+        wait.forVisibility(multiSelectDropDown);
+        wait.forVisibility(multiSelectDropDownInput);
+        wait.forVisibility(clean);
     }
 
-    public void selectInFirstInput(String inputValue) {
-        driver.findElement(By.id("withOptGroup")).click();
-        wait.forVisibility(firstInput);
-        driver.findElement(By.id("react-select-2-input")).sendKeys(inputValue);
-        driver.findElement(By.id("react-select-2-input")).sendKeys(Keys.ENTER);
+    public void selectValueDropdown(String inputValue) {
+        click(selectValueDropDown);
+        fillField(selectOptionInput, inputValue);
+        pressKey(selectOptionInput, Keys.ENTER);
+    }
+
+    public void selectOneDropdown(String inputValue) {
+        click(selectOneDropDown);
+        selectTitleInput.sendKeys(inputValue);
+        pressKey(selectTitleInput, Keys.ENTER);
+    }
+
+    public void selectOldDropDown(String text) {
+        Select select = new Select(selectOldDropDown);
+//        select.selectByValue(value);
+//        select.selectByIndex(0);
+        select.selectByVisibleText(text);
+    }
+
+    public void standardMultiSelect(List<String> values) {
+        Select select = new Select(standardMultiSelect);
+        for (String value : values) {
+            select.selectByValue(value);
+        }
 
     }
 
-    public void selectOld(String value) {
-        WebElement selectElement = driver.findElement(By.id("oldSelectMenu"));
-        Select select = new Select(selectElement);
-        select.selectByValue(value);
-        select.selectByIndex(0);
-        select.selectByVisibleText("Green");
-    }
-
-    public void selectMulti() {
-        WebElement selectElement = driver.findElement(By.id("cars"));
-        Select select = new Select(selectElement);
-        select.selectByValue("opel");
-        select.selectByValue("audi");
-
-    }
-
-    public void multiSelectDD(String inputValue) {
-        driver.findElement(By.cssSelector("[class=' css-2b097c-container']")).click();
-        //     wait.forVisibility(thirdInput);
-        driver.findElement(By.id("react-select-4-input")).sendKeys(inputValue);
-        driver.findElement(By.id("react-select-4-input")).sendKeys(Keys.ENTER);
-
+    public void multiSelectDropDown(String inputValue) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(multiSelectDropDownInput).click().build().perform();
+//        click(multiSelectDropDown);
+        multiSelectDropDownInput.sendKeys(inputValue);
+        pressKey(multiSelectDropDownInput, Keys.ENTER);
     }
 
     public void cleanInput() {
-        driver.findElement(By.xpath("(//*[@class='css-19bqh2r'])[5]")).click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(clean).click().build().perform();
     }
 
-    public void selectSecondInput(String inputValue) {
-        driver.findElement(By.id("selectOne")).click();
-        wait.forVisibility(secondInput);
-        driver.findElement(By.id("react-select-3-input")).sendKeys(inputValue);
-        driver.findElement(By.id("react-select-3-input")).sendKeys(Keys.ENTER);
-    }
+
 }

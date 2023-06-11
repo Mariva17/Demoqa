@@ -51,9 +51,9 @@ public class ProfilePageTests extends TestBase {
         profilePage = new ProfilePage(app.driver);
         profilePage.waitForLoading();
 
-        profilePage.pushButtonGoToBookStore();
-        profilePage.waitForLoading();
-        bookStorePage.goToBookStore();
+        profilePage.findButtonGoToBookStore();
+        bookStorePage.waitForLoading();
+        bookStorePage.checkGoToBookStore();
     }
 
     @Test
@@ -72,7 +72,7 @@ public class ProfilePageTests extends TestBase {
         profilePage.waitForLoading();
 
         profilePage.pushButtonDeleteAllBooks();
-        
+
 
     }
 

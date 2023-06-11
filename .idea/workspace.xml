@@ -5,35 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d4be97d-a83b-4bf3-be90-b54cc449fbb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/ApiBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/RegistrationApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/schemas/RegistrationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/BookStoreTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/ProfilePageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/RegistrationNewUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/SelectAllTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/ApplicationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/BookPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/BookStorePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/FramePages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/PageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/SelectPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/wait/Wait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/PracticeFormTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/e2e/WebTablesTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/PracticeForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ui/pages/WebTablesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/ProfilePageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/ProfilePageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/e2e/SelectAllTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e2e/SelectAllTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/pages/BookStorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/pages/BookStorePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/pages/PageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/pages/SelectPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/pages/SelectPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +61,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.ProfilePageTests.checkButtonLogOut">
-    <configuration name="ProfilePageTests.checkButtonDeleteAllBooks" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PracticeFormTests.checkFieldsOfPracticeForm">
+    <configuration name="PracticeFormTests.checkFieldsOfPracticeForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoQa.test" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +71,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="e2e" />
-      <option name="MAIN_CLASS_NAME" value="e2e.ProfilePageTests" />
-      <option name="METHOD_NAME" value="checkButtonDeleteAllBooks" />
+      <option name="MAIN_CLASS_NAME" value="e2e.PracticeFormTests" />
+      <option name="METHOD_NAME" value="checkFieldsOfPracticeForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -97,7 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfilePageTests.checkButtonGoToBookStore" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PracticeFormTests.checkMainPageForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoQa.test" />
       <extension name="coverage">
         <pattern>
@@ -106,44 +89,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="e2e" />
-      <option name="MAIN_CLASS_NAME" value="e2e.ProfilePageTests" />
-      <option name="METHOD_NAME" value="checkButtonGoToBookStore" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfilePageTests.checkButtonLogOut" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoQa.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e2e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="e2e" />
-      <option name="MAIN_CLASS_NAME" value="e2e.ProfilePageTests" />
-      <option name="METHOD_NAME" value="checkButtonLogOut" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationNewUserTest.registerNewUserViaApiAndLoginViaUITest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoQa.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e2e.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="e2e" />
-      <option name="MAIN_CLASS_NAME" value="e2e.RegistrationNewUserTest" />
-      <option name="METHOD_NAME" value="registerNewUserViaApiAndLoginViaUITest" />
+      <option name="MAIN_CLASS_NAME" value="e2e.PracticeFormTests" />
+      <option name="METHOD_NAME" value="checkMainPageForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,12 +116,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SelectAllTests.checkSelectValueSecondInput" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.SelectAllTests" />
+      <option name="METHOD_NAME" value="checkSelectValueSecondInput" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesTests.checkTypeToSearchByName" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQa.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="e2e.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="e2e" />
+      <option name="MAIN_CLASS_NAME" value="e2e.WebTablesTests" />
+      <option name="METHOD_NAME" value="checkTypeToSearchByName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProfilePageTests.checkButtonLogOut" />
-        <item itemvalue="TestNG.ProfilePageTests.checkButtonDeleteAllBooks" />
-        <item itemvalue="TestNG.ProfilePageTests.checkButtonGoToBookStore" />
-        <item itemvalue="TestNG.RegistrationNewUserTest.registerNewUserViaApiAndLoginViaUITest" />
+        <item itemvalue="TestNG.PracticeFormTests.checkFieldsOfPracticeForm" />
+        <item itemvalue="TestNG.PracticeFormTests.checkMainPageForm" />
+        <item itemvalue="TestNG.WebTablesTests.checkTypeToSearchByName" />
+        <item itemvalue="TestNG.SelectAllTests.checkSelectValueSecondInput" />
         <item itemvalue="TestNG.SelectAllTests.checkMultiSelectDropAndDown" />
       </list>
     </recent_temporary>
