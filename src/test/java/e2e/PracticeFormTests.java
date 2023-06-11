@@ -27,6 +27,7 @@ public class PracticeFormTests extends TestBase {
         practiceForm.fillSubjectField("Subject");
         practiceForm.checkHobbiesRadioButton();
         practiceForm.checkSelectState("NCR");
+        practiceForm.checkSelectCity("Agra");
     }
 
 }

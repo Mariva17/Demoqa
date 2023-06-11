@@ -38,8 +38,8 @@ public class PracticeForm extends PageBase {
     @FindBy(className = "subjects-auto-complete__input")
     public WebElement subjectElement;
 
-    //@FindBy(xpath = "//label[contains(text(), 'Sport')]")
-    @FindBy(id = "hobbies-checkbox-2")
+    @FindBy(xpath = "//label[contains(text(), 'Sports')]")
+    //@FindBy(id = "hobbies-checkbox-2")
     public WebElement hobbies;
 
     @FindBy(id = "state")
@@ -47,6 +47,12 @@ public class PracticeForm extends PageBase {
 
     @FindBy(id = "react-select-3-input")
     public WebElement selectStateInput;
+
+    @FindBy(id = "city")
+    public WebElement selectCity;
+
+    @FindBy(id = "react-select-4-input")
+    public WebElement selectCityInput;
 
 
     public void goToPracticeFormPage() {
@@ -62,6 +68,7 @@ public class PracticeForm extends PageBase {
         wait.forVisibility(subjectElement);
         wait.forVisibility(hobbies);
         wait.forVisibility(selectState);
+        wait.forVisibility(selectCity);
 
 
     }
@@ -92,13 +99,23 @@ public class PracticeForm extends PageBase {
     }
 
     public void checkHobbiesRadioButton() {
-        hobbies.click();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(hobbies).click().build().perform();
+
     }
 
     public void checkSelectState(String inputValue) {
-        click(selectState);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(selectState).click().build().perform();
         selectStateInput.sendKeys(inputValue);
         pressKey(selectStateInput, Keys.ENTER);
+    }
+
+    public void checkSelectCity(String inputValue) {
+        Actions actions = new Actions(driver);
+        actions.moveToElement(selectCity).click().build().perform();
+        selectCityInput.sendKeys(inputValue);
+        pressKey(selectCityInput, Keys.ENTER);
     }
 
 
